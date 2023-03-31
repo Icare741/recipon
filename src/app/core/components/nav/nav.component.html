@@ -1,0 +1,36 @@
+<!-- Bouton de menu hamburger -->
+
+
+
+<!-- Navbar -->
+<div class="bg-gray-800 p-10 flex  items-center">
+
+    <button class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded hamburger" (click)="openMenu()">
+        <i class="fa fa-bars"></i>
+    </button>
+  <!-- Logo -->
+  <div class="p-1 w-44">
+    <img src="./assets/recipon.png">
+  </div>
+  
+  <!-- Barre de recherche -->
+  <input type="text" placeholder="Recherche" class="col-start-auto h-10">
+
+  <!-- Boutons Home, Explore et Help -->
+  <div class="menu">
+    <button class="text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Home</button>
+    <button class="text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Explore</button>
+    <button class="text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Help</button>
+  </div>
+
+  <!-- Photo de profil -->
+  <div class="profile">
+    <!-- <img src="profile.png" (click)="openProfileMenu()" class="rounded-full h-12 w-12"> -->
+  </div>
+</div>
+
+<!-- Composant de menu hamburger -->
+<!-- <app-hamburger-menu *ngIf="menuOpen"></app-hamburger-menu> -->
+
+<!-- Composant de menu de profil -->
+<!-- <app-profile-menu *ngIf="profileMenuOpen"></app-profile-menu> -->

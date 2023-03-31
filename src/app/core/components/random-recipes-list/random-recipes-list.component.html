@@ -1,0 +1,11 @@
+<div class="flex">
+  <div class="recipe" *ngFor="let recipe of recipes">
+    <h3>{{ recipe.strMeal }}</h3>
+    <img class="w-100" [src]="recipe.strMealThumb" [alt]="recipe.strMeal" />
+  </div>
+</div>
+
+
+
+
+
