@@ -8,9 +8,9 @@ describe('RandomRecipesListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RandomRecipesListComponent ]
+      declarations: [RandomRecipesListComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(RandomRecipesListComponent);
     component = fixture.componentInstance;
@@ -20,5 +20,14 @@ describe('RandomRecipesListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
+  it('should have 8 recipes', () => {
+    expect(component.recipes.length).toBe(8);
+  }
+  );
+
+
+
+
 });
 

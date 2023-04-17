@@ -3,24 +3,37 @@
 
 
 <!-- Navbar -->
-<div class="bg-gray-800 p-10 flex  items-center">
+<div class="bg-white p-1 flex  items-center">
 
-    <button class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded hamburger" (click)="openMenu()">
-        <i class="fa fa-bars"></i>
-    </button>
+  <button data-ripple-light="true">
+    <span class="material-icons text-black">menu</span>
+  </button>
   <!-- Logo -->
-  <div class="p-1 w-44">
+  <div class="w-[50px] h-100">
     <img src="./assets/recipon.png">
   </div>
-  
+
   <!-- Barre de recherche -->
-  <input type="text" placeholder="Recherche" class="col-start-auto h-10">
+  <div class="flex items-center">
+    <select class="bg-gray-50 rounded-l px-4 h-10">
+      <option value="option1">All Categories</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <input type="text" placeholder="Recherche" class="flex-1 h-10 bg-gray-50 rounded-r px-4">
+    <button class="bg-green-500 text-white rounded px-3 py-2 flex ">
+      <span class="material-icons">search</span>
+    </button>
+  </div>
+  
+  
+
 
   <!-- Boutons Home, Explore et Help -->
   <div class="menu">
-    <button class="text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Home</button>
-    <button class="text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Explore</button>
-    <button class="text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Help</button>
+    <button class="text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Home</button>
+    <button class="text-black font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Explore</button>
+    <button class="text-black font-bold py-2 px-4 rounded-lg hover:bg-gray-700">Help</button>
   </div>
 
   <!-- Photo de profil -->

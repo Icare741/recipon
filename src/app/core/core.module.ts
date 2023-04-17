@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { RandomRecipesListComponent } from './components/random-recipes-list/random-recipes-list.component';
+import { ShowRecipesComponent } from './components/show-recipes/show-recipes.component';
 
 
 
@@ -19,6 +20,7 @@ import { RandomRecipesListComponent } from './components/random-recipes-list/ran
     FooterComponent,
     HeaderComponent,
     RandomRecipesListComponent,
+    ShowRecipesComponent,
 
   ],
   imports: [
@@ -31,6 +33,7 @@ import { RandomRecipesListComponent } from './components/random-recipes-list/ran
     FooterComponent,
     HeaderComponent,
     RandomRecipesListComponent,
+    ShowRecipesComponent
 
   ]
 })
