@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NotFoundGuardGuard } from './not-found-guard.guard';
+import { NotFoundGuard } from './not-found-guard.guard';
 
 describe('NotFoundGuardGuard', () => {
-  let guard: NotFoundGuardGuard;
+  let guard: NotFoundGuard;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    guard = TestBed.inject(NotFoundGuardGuard);
+    guard = TestBed.inject(NotFoundGuard);
   });
 
   it('should be created', () => {
