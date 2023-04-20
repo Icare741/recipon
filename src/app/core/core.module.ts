@@ -8,6 +8,7 @@ import { RandomRecipesListComponent } from './components/random-recipes-list/ran
 import { ShowRecipesComponent } from './components/show-recipes/show-recipes.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { FormatInstructionsPipe } from '../pipes/formatInstructions/format-instructions.pipe';
+import { HelpComponentComponent } from './components/help-component/help-component.component';
 
 
 
@@ -24,6 +25,7 @@ import { FormatInstructionsPipe } from '../pipes/formatInstructions/format-instr
     HeaderComponent,
     RandomRecipesListComponent,
     ShowRecipesComponent,
+    HelpComponentComponent,
  
     
 
@@ -32,11 +34,6 @@ import { FormatInstructionsPipe } from '../pipes/formatInstructions/format-instr
     CommonModule,
     SharedModule,
     PipesModule,
-    
-
-    
-   
-    
   ],
   exports: [
     NavComponent,
@@ -44,7 +41,8 @@ import { FormatInstructionsPipe } from '../pipes/formatInstructions/format-instr
     HeaderComponent,
     RandomRecipesListComponent,
     ShowRecipesComponent,
-    FormatInstructionsPipe
+    FormatInstructionsPipe,
+    HelpComponentComponent,
 
   ]
 })
