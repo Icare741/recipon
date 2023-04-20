@@ -1,6 +1,7 @@
 <div class="bg-gray-100">
     <div class="max-w-4xl mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">Ma recette</h1>
+        <button (click)="goBack()" class="material-icons rounded-full bg-green-500 px-10 py-2 flex">arrow_back</button>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">{{strmeal}}</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
                 <img [src]="strmealthumb" alt="Ma recette" class="rounded-lg">
@@ -11,13 +12,24 @@
                     <li><strong>Catégorie:</strong> {{strcategory}}</li>
                     <li><strong>Pays d'origine:</strong> {{strarea}}</li>
                 </ul>
-                <p class="text-lg text-gray-900 mt-8"><strong>Instructions de préparation :</strong> {{strinstructions}}
-                </p>
+                <div class="max-h-80 overflow-y-auto">
+                    <p class="text-lg text-gray-900 mt-8">
+                      <strong class="text-orange-500" >Instructions de préparation :</strong>
+                      <span [innerHTML]="strinstructions"></span>
+                    </p>
+                  </div>
+                  
+                  
+
                 <h2 class="text-xl font-bold text-gray-900 mb-2 mt-8">Vidéo</h2>
                 <div class="aspect-w-16 aspect-h-9">
                     <iframe [src]="stryoutube" title="Ma recette" class="rounded-lg" allowfullscreen></iframe>
                 </div>
+                
             </div>
         </div>
     </div>
+    <div class="bg-yellow-500 py-4 text-center">
+        <p class="text-lg">Envie d'essayer cette recette ? Suivez les instructions et régalez-vous !</p>
+      </div>
 </div>
