@@ -12,6 +12,7 @@ import { ShowRecipesComponent } from './components/show-recipes/show-recipes.com
 
 
 
+
 @NgModule({
   declarations: [
 
@@ -21,11 +22,13 @@ import { ShowRecipesComponent } from './components/show-recipes/show-recipes.com
     HeaderComponent,
     RandomRecipesListComponent,
     ShowRecipesComponent,
+    
 
   ],
   imports: [
     CommonModule,
     SharedModule,
+   
     
   ],
   exports: [

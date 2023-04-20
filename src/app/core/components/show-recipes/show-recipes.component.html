@@ -1,2 +1,23 @@
-<p>show-recipes works!</p>
-<h3 class="text-lg font-semibold">{{ recipe }}</h3>
+<div class="bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Ma recette</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <img [src]="strmealthumb" alt="Ma recette" class="rounded-lg">
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-gray-900 mb-2">Informations de recette</h2>
+                <ul class="list-disc ml-4">
+                    <li><strong>Catégorie:</strong> {{strcategory}}</li>
+                    <li><strong>Pays d'origine:</strong> {{strarea}}</li>
+                </ul>
+                <p class="text-lg text-gray-900 mt-8"><strong>Instructions de préparation :</strong> {{strinstructions}}
+                </p>
+                <h2 class="text-xl font-bold text-gray-900 mb-2 mt-8">Vidéo</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe [src]="stryoutube" title="Ma recette" class="rounded-lg" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

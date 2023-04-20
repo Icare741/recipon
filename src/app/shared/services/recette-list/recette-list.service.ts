@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Irecipes } from '../interfaces/irecipes';
-import { imeals } from '../interfaces/imeals';
+import { Irecipes } from '../../interfaces/irecipes';
+import { imeals } from '../../interfaces/imeals';
 
 
 @Injectable({
