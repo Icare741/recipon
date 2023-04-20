@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { RandomRecipesListComponent } from './components/random-recipes-list/random-recipes-list.component';
 import { ShowRecipesComponent } from './components/show-recipes/show-recipes.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { FormatInstructionsPipe } from '../pipes/formatInstructions/format-instructions.pipe';
 
 
 
@@ -22,12 +24,17 @@ import { ShowRecipesComponent } from './components/show-recipes/show-recipes.com
     HeaderComponent,
     RandomRecipesListComponent,
     ShowRecipesComponent,
+ 
     
 
   ],
   imports: [
     CommonModule,
     SharedModule,
+    PipesModule,
+    
+
+    
    
     
   ],
@@ -36,7 +43,8 @@ import { ShowRecipesComponent } from './components/show-recipes/show-recipes.com
     FooterComponent,
     HeaderComponent,
     RandomRecipesListComponent,
-    ShowRecipesComponent
+    ShowRecipesComponent,
+    FormatInstructionsPipe
 
   ]
 })
