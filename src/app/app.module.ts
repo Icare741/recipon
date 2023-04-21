@@ -7,11 +7,16 @@ import { HomeModule } from './home/page-home/home.module';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
+import { pipe } from 'rxjs';
+import { PipesModule } from './pipes/pipes.module';
+import { FormatInstructionsPipe } from './pipes/formatInstructions/format-instructions.pipe';
+import { ShowRecipesComponent } from './show-recipes/show-recipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
+    ShowRecipesComponent
     
   ],
   imports: [
@@ -20,8 +25,13 @@ import { NotFoundComponent } from './errors/not-found/not-found.component';
     HomeModule,
     CoreModule,
     BrowserAnimationsModule,
+    PipesModule,
+    
 
   ],
+exports: [
+  FormatInstructionsPipe
+],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RecipeService } from '../../../shared/services/recette-list/recette-list.service';
+import { RecipeService } from '../shared/services/recette-list/recette-list.service';
 import { Irecipes } from 'src/app/shared/interfaces/irecipes';
 import { imeals } from 'src/app/shared/interfaces/imeals';
 import { Router } from '@angular/router';

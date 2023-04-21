@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageHomeComponent } from './home/page-home/page-home.component';
-import { ShowRecipesComponent } from './core/components/show-recipes/show-recipes.component';
+import { ShowRecipesComponent } from './show-recipes/show-recipes.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { HelpComponentComponent } from './core/components/help-component/help-component.component';
 

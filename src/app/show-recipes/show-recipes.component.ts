@@ -9,10 +9,12 @@ import { Router } from '@angular/router';
 
 
 
+
 @Component({
   selector: 'app-show-recipes',
   templateUrl: './show-recipes.component.html',
   styleUrls: ['./show-recipes.component.css'],
+  
   
 })
 export class ShowRecipesComponent implements OnInit{
