@@ -1,15 +1,13 @@
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-  
-  <div class="recipe bg-white rounded-lg shadow-md overflow-hidden mx-2 hover:opacity-50" *ngFor="let recipe of recipes" (click)="goToRecipe(recipe)">
-    <img class="w-full h-48 object-cover " [src]="recipe.strMealThumb" [alt]="recipe.strMeal" />
-    <div class="p-4">
-      <h3 class="text-lg font-semibold">{{ recipe.strMeal }}</h3>
+  <ng-container *ngIf="recipes.length > 0; else noRecipes">
+    <div class="recipe bg-white rounded-lg shadow-md overflow-hidden mx-2 hover:opacity-50" *ngFor="let recipe of recipes" (click)="goToRecipe(recipe)">
+      <img class="w-full h-48 object-cover " [src]="recipe.strMealThumb" [alt]="recipe.strMeal" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">{{ recipe.strMeal }}</h3>
+      </div>
     </div>
-  </div>
+  </ng-container>
+  <ng-template #noRecipes>
+    <div class="text-center text-gray-400 py-4">Aucune recette n'est disponible pour le moment.</div>
+  </ng-template>
 </div>
-
-
-
-
-
-

@@ -9,15 +9,15 @@ import { NotFoundGuard } from './guards/not-found-guard.guard';
 const routes: Routes = [
   { path: '', component: PageHomeComponent },
   { path: 'recipe/:id', component: ShowRecipesComponent, canActivate: [NotFoundGuard] },
-  {path : 'help', component: HelpComponentComponent},
+  { path: 'help', component: HelpComponentComponent },
   { path: '404', component: NotFoundComponent },
- 
+
   {
     path: '**',
     redirectTo: '/404',
     pathMatch: 'full'
   }
-  
+
 ];
 
 @NgModule({
