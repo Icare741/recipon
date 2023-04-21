@@ -12,7 +12,7 @@ import { RecipeService } from './services/recette-list/recette-list.service';
     HttpClientModule,
   ],
   providers: [
-    RecipeService // ajouter le service dans le providers array
+    RecipeService 
   ]
 })
 export class SharedModule { }

@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
   selector: 'app-show-recipes',
   templateUrl: './show-recipes.component.html',
   styleUrls: ['./show-recipes.component.css'],
-  
+
   
 })
 export class ShowRecipesComponent implements OnInit{
@@ -55,8 +55,6 @@ export class ShowRecipesComponent implements OnInit{
     });
 
   }
-  goBack() {
-    this.router.navigate(['']); // or use navigateBack() if you want to go back in history
-  } 
+ 
 
 }
