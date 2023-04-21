@@ -21,4 +21,9 @@ export class RecipeService {
     const apiUrl = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`;
     return this.http.get<imeals>(apiUrl);
   }
+
+  getRecipeByName(name: string): Observable<imeals> {
+    const apiUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`;
+    return this.http.get<imeals>(apiUrl);
+  }
 }

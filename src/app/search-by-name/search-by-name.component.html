@@ -1,0 +1,7 @@
+<div class="recipe bg-white rounded-lg shadow-md overflow-hidden mx-2 hover:opacity-50" *ngFor="let recipe of searchedRecipes" (click)="goToRecipe(recipe)">
+    <img [src]="recipe.strMealThumb" alt="thumbnail">
+    <div class="recipe-info">
+      <h3>{{recipe.strMeal}}</h3>
+      <p>{{recipe.strArea}}</p>
+    </div>
+  </div>

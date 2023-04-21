@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormatInstructionsPipe } from '../pipes/formatInstructions/format-instructions.pipe';
 import { HelpComponentComponent } from './components/help-component/help-component.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { HelpComponentComponent } from './components/help-component/help-compone
   ],
   imports: [
     CommonModule,
-    SharedModule,
+    SharedModule, 
+    FormsModule
   
   ],
   exports: [

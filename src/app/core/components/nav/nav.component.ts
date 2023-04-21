@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { imeals } from 'src/app/shared/interfaces/imeals';
+import { Irecipes } from 'src/app/shared/interfaces/irecipes';
+import { RecipeService } from 'src/app/shared/services/recette-list/recette-list.service';
+
 
 @Component({
   selector: 'app-nav',
@@ -9,7 +13,9 @@ import { Router } from '@angular/router';
 export class NavComponent {
 
   menuOpen = false;
-  constructor(private router: Router) { }
+  recipes: Irecipes[] = [];
+  searchTerm!: string;
+  constructor(private router: Router, private recipeService: RecipeService) { }
 
 openMenu() {
   this.menuOpen = !this.menuOpen;
@@ -20,4 +26,13 @@ goHelp() {
 goHome() {
   this.router.navigate(['']); // or use navigateBack() if you want to go back in history
 }
+search(): void {
+  this.recipeService.getRecipeByName(this.searchTerm).subscribe((meals) => {
+    if (meals.meals) {
+      const recipes = meals.meals;
+      this.router.navigate(['/recipe/search', this.searchTerm], { state: { recipes } });
+    }
+  });
 }
+}
+

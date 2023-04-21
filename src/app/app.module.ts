@@ -11,12 +11,15 @@ import { pipe } from 'rxjs';
 import { PipesModule } from './pipes/pipes.module';
 import { FormatInstructionsPipe } from './pipes/formatInstructions/format-instructions.pipe';
 import { ShowRecipesComponent } from './show-recipes/show-recipes.component';
+import { SearchByNameComponent } from './search-by-name/search-by-name.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    ShowRecipesComponent
+    ShowRecipesComponent,
+    SearchByNameComponent
     
   ],
   imports: [
@@ -26,6 +29,7 @@ import { ShowRecipesComponent } from './show-recipes/show-recipes.component';
     CoreModule,
     BrowserAnimationsModule,
     PipesModule,
+    RouterModule
     
 
   ],
