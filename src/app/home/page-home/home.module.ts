@@ -20,6 +20,7 @@ import { RandomRecipesListComponent } from 'src/app/random-recipes-list/random-r
     AppRoutingModule,
     CoreModule,
     
+    
   ],
   exports: [
     PageHomeComponent
